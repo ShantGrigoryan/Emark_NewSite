@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>E‑Mark տեղեկատվական շտեմարան</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav><img src="assets/logo.png" alt="E‑Mark"><a href="#about">Համակարգ</a><a href="#atg">ԱՏԳ ԱԱ</a><a
+            href="#groups">Ապրանքախմբեր</a><a href="#atglist">ԱՏԳ ցանկ</a><a href="#excl">Բացառություններ</a><a href="#dec">Որոշումներ</a><a
+            href="#key">Դրույթներ</a><a href="#defect">Խոտանում</a><a href="#stat">Կարգավիճակներ</a><a
+            href="#issues">Խնդիրներ</a><a href="#exp">Արտահանում</a></nav>
+    <header class="hero">
+        <div class="w"><small>ՏԵՂԵԿԱՏՎԱԿԱՆ ՆՅՈՒԹ</small>
+            <h1>E‑Mark տեղեկատվական շտեմարան</h1>
+            <p>Ապրանքների դրոշմավորման և հետագծելիության համակարգի ընդհանուր ներկայացում</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="w">
+            <h2>E‑Mark համակարգի մասին</h2>
+            <p class="sub">«E‑Mark» ՍՊԸ-ն ստեղծվել է 2020 թվականին և Հայաստանում ապրանքների դրոշմավորման ու
+                հետագծելիության համակարգի ազգային օպերատորն է։</p>
+            <div class="g" id="ab"></div>
+        </div>
+    </section>
+
+    <section id="atg" class="dk">
+        <div class="w">
+            <h2>ԱՏԳ ԱԱ</h2>
+            <p class="sub">Արտաքին տնտեսական գործունեության ապրանքային անվանացանկ</p>
+            <div class="c">
+                <p>ԱՏԳ ԱԱ ծածկագիրն արտադրողին տրամադրվում է 2015 թվականի ապրիլի 14-ի N 220-Ն հրամանի համաձայն, իսկ
+                    ներմուծողին՝ մաքսային մարմնի կողմից։</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="groups">
+        <div class="w">
+            <h2>Պարտադիր դրոշմավորման ենթակա ապրանքախմբեր</h2>
+            <p class="sub">Ժամկետներ և ԱՏԳ ԱԱ ծածկագրեր</p><input id="q"
+                placeholder="Որոնել ապրանքախումբ կամ ծածկագիր…">
+            <div class="g" id="gl"></div>
+        </div>
+    </section>
+
+    <section id="atglist" class="lt">
+        <div class="w">
+            <h2>Փորձնական ծրագրի շրջանակում դրոշմավորվող ԱՏԳ ԱԱ ծածկագրերի ցանկ</h2>
+            <p class="sub">Որոշումներով հաստատված ապրանքախմբեր և դրանց ԱՏԳ ԱԱ ծածկագրեր</p>
+            <div class="al-bar">
+                <div class="al-search">
+                    <input id="aq" type="search" autocomplete="off"
+                        placeholder="Որոնել ըստ ծածկագրի (օր.՝ 4011), անվանման կամ ապրանքախմբի…"
+                        aria-label="Որոնում ԱՏԳ ԱԱ ցանկում">
+                    <button id="aclr" type="button" aria-label="Մաքրել" hidden>✕</button>
+                </div>
+                <select id="agr" aria-label="Ապրանքախումբ"></select>
+            </div>
+            <div class="al-chips" id="adc"></div>
+            <div class="al-meta"><span id="acnt"></span><button id="areset" type="button" hidden>Մաքրել ֆիլտրերը</button></div>
+            <div id="alist"></div>
+        </div>
+    </section>
+
+    <section id="excl" class="dk">
+        <div class="w">
+            <h2>Բացառություններ</h2>
+            <p class="sub">Դրոշմավորման ընդհանուր կարգից բացառություններ և պայմանական պահանջներ</p>
+            <div class="g" id="ex"></div>
+        </div>
+    </section>
+
+    <section id="dec">
+        <div class="w">
+            <h2>Որոշումներ</h2>
+            <p class="sub">Դրոշմավորման համակարգը կարգավորող որոշումներ</p>
+            <div class="tabs" id="tb"></div>
+            <div id="dp"></div>
+        </div>
+    </section>
+
+    <section id="key" class="dk">
+        <div class="w">
+            <h2>Կարևոր դրույթներ</h2>
+            <div class="g" id="ky"></div>
+        </div>
+    </section>
+
+    <section id="defect">
+        <div class="w">
+            <h2>Խոտանում</h2>
+            <p class="sub">Հինգ հիմնական պատճառները, տեսակները և կիրառման պայմանները</p>
+            <div class="g" id="df"></div>
+        </div>
+    </section>
+
+    <section id="stat" class="dk">
+        <div class="w">
+            <h2>Դրոշմավորման ծածկագրերի կարգավիճակներ</h2>
+            <div id="sl"></div>
+        </div>
+    </section>
+
+    <section id="issues">
+        <div class="w">
+            <h2>Հաճախ հանդիպող խնդիրներ</h2>
+            <p class="sub">Պատվերի մերժում, ապրանքի գրանցում, հաշվետվության սխալներ</p>
+            <div class="g" id="is"></div>
+        </div>
+    </section>
+
+    <section id="exp" class="dk">
+        <div class="w">
+            <h2>Արտահանում և փոխճանաչելիություն</h2>
+            <div class="g" id="xp"></div>
+        </div>
+    </section>
+
+    <footer><img src="assets/logo.png" alt="">«Ի‑Մարկ» ՍՊԸ · © Մանե Մելքումյան · 2026</footer>
+    <script src="atg-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
