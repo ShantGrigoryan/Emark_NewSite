@@ -10,7 +10,7 @@
 
 <body>
     <nav><img src="assets/logo.png" alt="E‑Mark"><a href="#about">Համակարգ</a><a href="#atg">ԱՏԳ ԱԱ</a><a
-            href="#groups">Ապրանքախմբեր</a><a href="#atglist">ԱՏԳ ցանկ</a><a href="#excl">Բացառություններ</a><a href="#dec">Որոշումներ</a><a
+            href="#atglist">ԱՏԳ ցանկ</a><a href="#excl">Բացառություններ</a><a href="#dec">Որոշումներ</a><a
             href="#key">Դրույթներ</a><a href="#defect">Խոտանում</a><a href="#stat">Կարգավիճակներ</a><a
             href="#issues">Խնդիրներ</a><a href="#exp">Արտահանում</a></nav>
     <header class="hero">
@@ -40,20 +40,25 @@
         </div>
     </section>
 
-    <section id="groups">
-        <div class="w">
-            <h2>Պարտադիր դրոշմավորման ենթակա ապրանքախմբեր</h2>
-            <p class="sub">Ժամկետներ և ԱՏԳ ԱԱ ծածկագրեր</p><input id="q"
-                placeholder="Որոնել ապրանքախումբ կամ ծածկագիր…">
-            <div class="g" id="gl"></div>
-        </div>
-    </section>
-
     <section id="atglist" class="lt">
         <div class="w">
-            <h2>Փորձնական ծրագրի շրջանակում դրոշմավորվող ԱՏԳ ԱԱ ծածկագրերի ցանկ</h2>
-            <p class="sub">Որոշումներով հաստատված ապրանքախմբեր և դրանց ԱՏԳ ԱԱ ծածկագրեր</p>
-            <div class="al-bar">
+            <h2>ԱՏԳ ցանկ</h2>
+            <p class="sub">Դրոշմավորման ենթակա ապրանքախմբեր և ԱՏԳ ԱԱ ծածկագրեր</p>
+
+            <div class="sb-tabs" role="tablist">
+                <button type="button" class="on" data-p="p1" role="tab">Պարտադիր դրոշմավորման ենթակա ապրանքախմբեր</button>
+                <button type="button" data-p="p2" role="tab">Փորձնական ծրագրի շրջանակում դրոշմավորվող ԱՏԳ ԱԱ ծածկագրերի ցանկ</button>
+            </div>
+
+            <!-- Ենթաբաժին 1 -->
+            <div class="sb-pn on" id="p1">
+                <input id="q" placeholder="Որոնել ապրանքախումբ կամ ծածկագիր…">
+                <div class="g" id="gl"></div>
+            </div>
+
+            <!-- Ենթաբաժին 2 -->
+            <div class="sb-pn" id="p2">
+                <div class="al-bar">
                 <div class="al-search">
                     <input id="aq" type="search" autocomplete="off"
                         placeholder="Որոնել ըստ ծածկագրի (օր.՝ 4011), անվանման կամ ապրանքախմբի…"
@@ -65,6 +70,7 @@
             <div class="al-chips" id="adc"></div>
             <div class="al-meta"><span id="acnt"></span><button id="areset" type="button" hidden>Մաքրել ֆիլտրերը</button></div>
             <div id="alist"></div>
+            </div>
         </div>
     </section>
 
